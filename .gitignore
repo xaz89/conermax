@@ -1,0 +1,14 @@
+.DS_Store
+.sass-cache
+.vagrant
+.vscode
+git-info.txt
+logs/*.log
+node_modules
+npm-debug.log
+html/web_components
+
+
+
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
