@@ -40,7 +40,7 @@
       padding-bottom: 0px;
   }
   .container-fluid {
-      padding: 60px 50px;
+      padding: 5% 10%;
   }
   .bg-grey {
       background-color: #f6f6f6;
@@ -142,7 +142,7 @@
       width: 230px !important;
       height: 100% !important;
       float: left;
-      
+
   }
   
   .navbar-nav li a:hover, .navbar-nav li.active a {
@@ -153,6 +153,22 @@
       border-color: transparent;
       color: #fff !important;
   }
+
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+.navbar-default .navbar-toggle:hover {
+    background-color: #063365;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+
+
   .parallax {
        /* The image used */
     background: pink url("img/1.jpg") no-repeat fixed center; 
@@ -206,10 +222,16 @@
         width: 100%;
         margin-bottom: 35px;
     }
+    .logosvg img{
+      width: 50%;
+    }
   }
   @media screen and (max-width: 480px) {
     .logo {
         font-size: 150px;
+    }
+    .logosvg img{
+      width: 50%;
     }
   }
   </style>
@@ -224,7 +246,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#Conermax"><img src="img/logo-blanco-01.svg" alt="" style="width: 35%;">
+      <a class="navbar-brand" href="#Conermax"><img src="img/icono-logo-blanco-01.png" alt="" style="width: 10%;">
       </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -244,7 +266,9 @@
   <br/>
   <br/>
   <br/>
-  <img src="img/logo-blanco-01.svg" alt="" width="25%">
+  <div class="logosvg">
+    <img src="img/logo-blanco-01.svg" alt="" width="25%">
+  </div>
   <br/>
   <h3>La empresa solar con más de 25 años de experiencia</h3>
   <br/>
@@ -316,14 +340,14 @@
 <!-- Container (Sección Inicio) -->
 <div id="nosotros" class="container-fluid">
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-7" >
       <h2>Sobre nosotros</h2><br>
       <h4>MÁS DE 25 AÑOS DE EXPERIENCIA</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       <br><button class="btn btn-default btn-lg">Contáctanos</button>
     </div>
-    <div class="col-sm-4">
-      <img src="img/proyectos.jpg" style="width: 100%; position: relative;">
+    <div class="col-sm-5">
+      <img src="img/proyectos.jpg" style="width: 100%; position: relative; margin-left: auto; margin-right: auto;">
       
     </div>
   </div>
