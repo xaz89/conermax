@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,7 +16,6 @@
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
       color: #818181;
-
   }
   h2 {
       font-size: 24px;
@@ -37,6 +37,7 @@
       color: #fff;
       margin-bottom: 0px !important;     
       font-family: Montserrat, sans-serif;
+      padding-bottom: 0px;
   }
   .container-fluid {
       padding: 60px 50px;
@@ -128,23 +129,22 @@
       border: 0;
       font-size: 12px !important;
       line-height: 1.42857143 !important;
-      letter-spacing: 4px;
+      letter-spacing: 0px;
       border-radius: 0;
       font-family: Montserrat, sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
       color: #fff !important;
+
   }
 
-/*
-  .navbar-brand img{
-      width: 35%;
+  .navbar-brand {
+      width: 230px !important;
+      height: 100% !important;
       float: left;
-
+      
   }
-
-  */
-
+  
   .navbar-nav li a:hover, .navbar-nav li.active a {
       color: #f4511e !important;
       background-color: #fff !important;
@@ -153,15 +153,11 @@
       border-color: transparent;
       color: #fff !important;
   }
-
   .parallax {
-
        /* The image used */
     background: pink url("img/1.jpg") no-repeat fixed center; 
-
     /* Set a specific height */
     min-height: 500px; 
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -247,12 +243,13 @@
   <br/>
   <br/>
   <br/>
+  <br/>
   <img src="img/logo-blanco-01.svg" alt="" width="25%">
   <br/>
   <h3>La empresa solar con más de 25 años de experiencia</h3>
   <br/>
   <br/>
-  <br/>
+  
   
   <form class="form-inline">
     <div class="input-group">
@@ -271,6 +268,8 @@
                         
     <a href="https://api.whatsapp.com/send?phone=50688007000&text=Contacto%20desde%20sitio%20web" target="_new" style="color: white;"></a> 
   </button>
+  <br/>
+  <br/>
   <br/>
 
 </div>
@@ -300,12 +299,10 @@
  <!--Termina sticky -->
 
  <!--Inicia imagen parallax 
-
 <div class="parallax">
    <br/>
    </div>
  
-
  <!--Termina imagen parallax-->
 
 
@@ -553,7 +550,6 @@
     </div>    
   </div>
 </div>
-
 <!-- Container (Contact Section) -->
 <div id="contacto" class="container-fluid bg-grey">
   <h2 class="text-center">CONTACTO</h2>
@@ -616,10 +612,8 @@ $(document).ready(function(){
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
@@ -635,7 +629,6 @@ $(document).ready(function(){
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
-
       var winTop = $(window).scrollTop();
         if (pos < winTop + 600) {
           $(this).addClass("slide");
@@ -647,3 +640,5 @@ $(document).ready(function(){
 
 </body>
 </html>
+
+About
