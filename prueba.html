@@ -15,7 +15,6 @@
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
       color: #818181;
-
   }
   h2 {
       font-size: 24px;
@@ -31,11 +30,10 @@
       font-weight: 400;
       margin-bottom: 30px;
   }  
-  
   .jumbotron {
-      background: url("/img/2.jpg") fixed;      
+      background-color: #0346a5;
       color: #fff;
-      margin-bottom: 0px !important;     
+      align-content: center;
       font-family: Montserrat, sans-serif;
   }
   .container-fluid {
@@ -121,7 +119,6 @@
       color: #fff;
   }
   .navbar {
-      position: fixed;
       margin-bottom: 0;
       background-color: #0346a5;
       z-index: 9999;
@@ -134,17 +131,13 @@
   }
   .navbar li a, .navbar .navbar-brand {
       color: #fff !important;
+      
   }
 
-/*
-  .navbar-brand img{
-      width: 35%;
-      float: left;
+  .navbar-brand img {
+    width: 35%;
 
   }
-
-  */
-
   .navbar-nav li a:hover, .navbar-nav li.active a {
       color: #f4511e !important;
       background-color: #fff !important;
@@ -153,21 +146,6 @@
       border-color: transparent;
       color: #fff !important;
   }
-
-  .parallax {
-
-       /* The image used */
-    background: pink url("../img/1.jpg") no-repeat fixed center; 
-
-    /* Set a specific height */
-    min-height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
@@ -228,63 +206,44 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#Conermax"><img src="../img/logo-blanco-01.svg" alt="" style="width: 35%;">
+      <a class="navbar-brand" href="#Conermax"><img src="/img/logo-blanco-01.svg" alt="">
       </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#nosotros">NOSOTROS</a></li>
-        <li><a href="#servicios">SERVICIOS</a></li>
+        <li><a href="#inicio">INICIO</a></li>
         <li><a href="#experiencia">EXPERIENCIA</a></li>
-        <li><a href="#contacto">CONTACTO</a></li>
+        <li><a href="#servicios">SERVICIOS</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contacto">CONTACT</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="jumbotron text-center ">
-  <div style="background: rgba(3, 70, 165, 0.6); width: 100%;">
-  <br/>
-  <br/>
-  <br/>
-  <img src="/img/logo-blanco-01.svg" alt="" width="25%">
-  <br/>
-  <h3>La empresa solar con más de 25 años de experiencia</h3>
-  <br/>
-  <br/>
-  <br/>
-  
-  <form class="form-inline">
+<!-- Inicia Jumbotron -->
+
+<div class="jumbotron text-center">
+  <h1>Conermax</h1> 
+  <p>We specialize in blablabla</p> 
+  <form>
     <div class="input-group">
-      <input type="email" class="form-control" size="50" placeholder="Envíanos tu mail" required>
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
       <div class="input-group-btn">
-        <button type="button" class="btn btn-danger">Suscríbete</button>
+        <button type="button" class="btn btn-danger">Subscribe</button>
       </div>
     </div>
   </form>
-
-<br/>
-  <button style="background-color: green; margin-bottom: 0px;" class="btn">
-  <i class="fa"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDkwIDkwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5MCA5MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGlkPSJXaGF0c0FwcCIgZD0iTTkwLDQzLjg0MWMwLDI0LjIxMy0xOS43NzksNDMuODQxLTQ0LjE4Miw0My44NDFjLTcuNzQ3LDAtMTUuMDI1LTEuOTgtMjEuMzU3LTUuNDU1TDAsOTBsNy45NzUtMjMuNTIyICAgYy00LjAyMy02LjYwNi02LjM0LTE0LjM1NC02LjM0LTIyLjYzN0MxLjYzNSwxOS42MjgsMjEuNDE2LDAsNDUuODE4LDBDNzAuMjIzLDAsOTAsMTkuNjI4LDkwLDQzLjg0MXogTTQ1LjgxOCw2Ljk4MiAgIGMtMjAuNDg0LDAtMzcuMTQ2LDE2LjUzNS0zNy4xNDYsMzYuODU5YzAsOC4wNjUsMi42MjksMTUuNTM0LDcuMDc2LDIxLjYxTDExLjEwNyw3OS4xNGwxNC4yNzUtNC41MzcgICBjNS44NjUsMy44NTEsMTIuODkxLDYuMDk3LDIwLjQzNyw2LjA5N2MyMC40ODEsMCwzNy4xNDYtMTYuNTMzLDM3LjE0Ni0zNi44NTdTNjYuMzAxLDYuOTgyLDQ1LjgxOCw2Ljk4MnogTTY4LjEyOSw1My45MzggICBjLTAuMjczLTAuNDQ3LTAuOTk0LTAuNzE3LTIuMDc2LTEuMjU0Yy0xLjA4NC0wLjUzNy02LjQxLTMuMTM4LTcuNC0zLjQ5NWMtMC45OTMtMC4zNTgtMS43MTctMC41MzgtMi40MzgsMC41MzcgICBjLTAuNzIxLDEuMDc2LTIuNzk3LDMuNDk1LTMuNDMsNC4yMTJjLTAuNjMyLDAuNzE5LTEuMjYzLDAuODA5LTIuMzQ3LDAuMjcxYy0xLjA4Mi0wLjUzNy00LjU3MS0xLjY3My04LjcwOC01LjMzMyAgIGMtMy4yMTktMi44NDgtNS4zOTMtNi4zNjQtNi4wMjUtNy40NDFjLTAuNjMxLTEuMDc1LTAuMDY2LTEuNjU2LDAuNDc1LTIuMTkxYzAuNDg4LTAuNDgyLDEuMDg0LTEuMjU1LDEuNjI1LTEuODgyICAgYzAuNTQzLTAuNjI4LDAuNzIzLTEuMDc1LDEuMDgyLTEuNzkzYzAuMzYzLTAuNzE3LDAuMTgyLTEuMzQ0LTAuMDktMS44ODNjLTAuMjctMC41MzctMi40MzgtNS44MjUtMy4zNC03Ljk3NyAgIGMtMC45MDItMi4xNS0xLjgwMy0xLjc5Mi0yLjQzNi0xLjc5MmMtMC42MzEsMC0xLjM1NC0wLjA5LTIuMDc2LTAuMDljLTAuNzIyLDAtMS44OTYsMC4yNjktMi44ODksMS4zNDQgICBjLTAuOTkyLDEuMDc2LTMuNzg5LDMuNjc2LTMuNzg5LDguOTYzYzAsNS4yODgsMy44NzksMTAuMzk3LDQuNDIyLDExLjExM2MwLjU0MSwwLjcxNiw3LjQ5LDExLjkyLDE4LjUsMTYuMjIzICAgQzU4LjIsNjUuNzcxLDU4LjIsNjQuMzM2LDYwLjE4Niw2NC4xNTZjMS45ODQtMC4xNzksNi40MDYtMi41OTksNy4zMTItNS4xMDdDNjguMzk4LDU2LjUzNyw2OC4zOTgsNTQuMzg2LDY4LjEyOSw1My45Mzh6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /></i><a href="https://api.whatsapp.com/send?phone=50688007000&text=Contacto%20desde%20sitio%20web" target="_new" style="color: white; text-decoration: underline; font-size: 15px;"> Whatsapp +506 8800-7000 </a>
-
-
-                        
-    <a href="https://api.whatsapp.com/send?phone=50688007000&text=Contacto%20desde%20sitio%20web" target="_new" style="color: white;"></a> 
-  </button>
-
 </div>
 
-
-
-
-</div>
+<!--Termina jumbotron -->
 
 <!-- Inicia sticky whatsapp -->
 
-<div style="margin-bottom: 0px; position: fixed; bottom: 5%; z-index: 1; right: 0px; bottom: 0px;">
-  <button type="button" style="background-color: green;" class="btn"; >
+<div style="position: sticky; top: 95%; z-index: 1; right: 0px;">
+  <button type="button" style="background-color: green;" class="btn" >
     
-                            <i class="fa"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDkwIDkwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5MCA5MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGlkPSJXaGF0c0FwcCIgZD0iTTkwLDQzLjg0MWMwLDI0LjIxMy0xOS43NzksNDMuODQxLTQ0LjE4Miw0My44NDFjLTcuNzQ3LDAtMTUuMDI1LTEuOTgtMjEuMzU3LTUuNDU1TDAsOTBsNy45NzUtMjMuNTIyICAgYy00LjAyMy02LjYwNi02LjM0LTE0LjM1NC02LjM0LTIyLjYzN0MxLjYzNSwxOS42MjgsMjEuNDE2LDAsNDUuODE4LDBDNzAuMjIzLDAsOTAsMTkuNjI4LDkwLDQzLjg0MXogTTQ1LjgxOCw2Ljk4MiAgIGMtMjAuNDg0LDAtMzcuMTQ2LDE2LjUzNS0zNy4xNDYsMzYuODU5YzAsOC4wNjUsMi42MjksMTUuNTM0LDcuMDc2LDIxLjYxTDExLjEwNyw3OS4xNGwxNC4yNzUtNC41MzcgICBjNS44NjUsMy44NTEsMTIuODkxLDYuMDk3LDIwLjQzNyw2LjA5N2MyMC40ODEsMCwzNy4xNDYtMTYuNTMzLDM3LjE0Ni0zNi44NTdTNjYuMzAxLDYuOTgyLDQ1LjgxOCw2Ljk4MnogTTY4LjEyOSw1My45MzggICBjLTAuMjczLTAuNDQ3LTAuOTk0LTAuNzE3LTIuMDc2LTEuMjU0Yy0xLjA4NC0wLjUzNy02LjQxLTMuMTM4LTcuNC0zLjQ5NWMtMC45OTMtMC4zNTgtMS43MTctMC41MzgtMi40MzgsMC41MzcgICBjLTAuNzIxLDEuMDc2LTIuNzk3LDMuNDk1LTMuNDMsNC4yMTJjLTAuNjMyLDAuNzE5LTEuMjYzLDAuODA5LTIuMzQ3LDAuMjcxYy0xLjA4Mi0wLjUzNy00LjU3MS0xLjY3My04LjcwOC01LjMzMyAgIGMtMy4yMTktMi44NDgtNS4zOTMtNi4zNjQtNi4wMjUtNy40NDFjLTAuNjMxLTEuMDc1LTAuMDY2LTEuNjU2LDAuNDc1LTIuMTkxYzAuNDg4LTAuNDgyLDEuMDg0LTEuMjU1LDEuNjI1LTEuODgyICAgYzAuNTQzLTAuNjI4LDAuNzIzLTEuMDc1LDEuMDgyLTEuNzkzYzAuMzYzLTAuNzE3LDAuMTgyLTEuMzQ0LTAuMDktMS44ODNjLTAuMjctMC41MzctMi40MzgtNS44MjUtMy4zNC03Ljk3NyAgIGMtMC45MDItMi4xNS0xLjgwMy0xLjc5Mi0yLjQzNi0xLjc5MmMtMC42MzEsMC0xLjM1NC0wLjA5LTIuMDc2LTAuMDljLTAuNzIyLDAtMS44OTYsMC4yNjktMi44ODksMS4zNDQgICBjLTAuOTkyLDEuMDc2LTMuNzg5LDMuNjc2LTMuNzg5LDguOTYzYzAsNS4yODgsMy44NzksMTAuMzk3LDQuNDIyLDExLjExM2MwLjU0MSwwLjcxNiw3LjQ5LDExLjkyLDE4LjUsMTYuMjIzICAgQzU4LjIsNjUuNzcxLDU4LjIsNjQuMzM2LDYwLjE4Niw2NC4xNTZjMS45ODQtMC4xNzksNi40MDYtMi41OTksNy4zMTItNS4xMDdDNjguMzk4LDU2LjUzNyw2OC4zOTgsNTQuMzg2LDY4LjEyOSw1My45Mzh6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /></i><a href="https://api.whatsapp.com/send?phone=50688007000&text=Contacto%20desde%20sitio%20web" target="_new" style="color: white; text-decoration: underline; font-size: 15px;"> Whatsapp <br/> +506 8800-7000 </a>
+                            <i class="fa"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDkwIDkwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5MCA5MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGlkPSJXaGF0c0FwcCIgZD0iTTkwLDQzLjg0MWMwLDI0LjIxMy0xOS43NzksNDMuODQxLTQ0LjE4Miw0My44NDFjLTcuNzQ3LDAtMTUuMDI1LTEuOTgtMjEuMzU3LTUuNDU1TDAsOTBsNy45NzUtMjMuNTIyICAgYy00LjAyMy02LjYwNi02LjM0LTE0LjM1NC02LjM0LTIyLjYzN0MxLjYzNSwxOS42MjgsMjEuNDE2LDAsNDUuODE4LDBDNzAuMjIzLDAsOTAsMTkuNjI4LDkwLDQzLjg0MXogTTQ1LjgxOCw2Ljk4MiAgIGMtMjAuNDg0LDAtMzcuMTQ2LDE2LjUzNS0zNy4xNDYsMzYuODU5YzAsOC4wNjUsMi42MjksMTUuNTM0LDcuMDc2LDIxLjYxTDExLjEwNyw3OS4xNGwxNC4yNzUtNC41MzcgICBjNS44NjUsMy44NTEsMTIuODkxLDYuMDk3LDIwLjQzNyw2LjA5N2MyMC40ODEsMCwzNy4xNDYtMTYuNTMzLDM3LjE0Ni0zNi44NTdTNjYuMzAxLDYuOTgyLDQ1LjgxOCw2Ljk4MnogTTY4LjEyOSw1My45MzggICBjLTAuMjczLTAuNDQ3LTAuOTk0LTAuNzE3LTIuMDc2LTEuMjU0Yy0xLjA4NC0wLjUzNy02LjQxLTMuMTM4LTcuNC0zLjQ5NWMtMC45OTMtMC4zNTgtMS43MTctMC41MzgtMi40MzgsMC41MzcgICBjLTAuNzIxLDEuMDc2LTIuNzk3LDMuNDk1LTMuNDMsNC4yMTJjLTAuNjMyLDAuNzE5LTEuMjYzLDAuODA5LTIuMzQ3LDAuMjcxYy0xLjA4Mi0wLjUzNy00LjU3MS0xLjY3My04LjcwOC01LjMzMyAgIGMtMy4yMTktMi44NDgtNS4zOTMtNi4zNjQtNi4wMjUtNy40NDFjLTAuNjMxLTEuMDc1LTAuMDY2LTEuNjU2LDAuNDc1LTIuMTkxYzAuNDg4LTAuNDgyLDEuMDg0LTEuMjU1LDEuNjI1LTEuODgyICAgYzAuNTQzLTAuNjI4LDAuNzIzLTEuMDc1LDEuMDgyLTEuNzkzYzAuMzYzLTAuNzE3LDAuMTgyLTEuMzQ0LTAuMDktMS44ODNjLTAuMjctMC41MzctMi40MzgtNS44MjUtMy4zNC03Ljk3NyAgIGMtMC45MDItMi4xNS0xLjgwMy0xLjc5Mi0yLjQzNi0xLjc5MmMtMC42MzEsMC0xLjM1NC0wLjA5LTIuMDc2LTAuMDljLTAuNzIyLDAtMS44OTYsMC4yNjktMi44ODksMS4zNDQgICBjLTAuOTkyLDEuMDc2LTMuNzg5LDMuNjc2LTMuNzg5LDguOTYzYzAsNS4yODgsMy44NzksMTAuMzk3LDQuNDIyLDExLjExM2MwLjU0MSwwLjcxNiw3LjQ5LDExLjkyLDE4LjUsMTYuMjIzICAgQzU4LjIsNjUuNzcxLDU4LjIsNjQuMzM2LDYwLjE4Niw2NC4xNTZjMS45ODQtMC4xNzksNi40MDYtMi41OTksNy4zMTItNS4xMDdDNjguMzk4LDU2LjUzNyw2OC4zOTgsNTQuMzg2LDY4LjEyOSw1My45Mzh6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /></i><a href="https://api.whatsapp.com/send?phone=50688007000&text=Contacto%20desde%20sitio%20web" target="_new" style="color: white; text-decoration: underline; font-size: 15px;"> Whatsapp +506 8800-7000 </a>
 
 
                         
@@ -295,113 +254,13 @@
 
 
 
-
  <!--Termina sticky -->
 
- <!--Inicia imagen parallax 
-
-<div class="parallax">
-   <br/>
-   </div>
- 
-
- <!--Termina imagen parallax-->
 
 
 
-
-
-
-
-
-
-<!-- Container (Sección Inicio) -->
-<div id="nosotros" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2>Sobre nosotros</h2><br>
-      <h4>MÁS DE 25 AÑOS DE EXPERIENCIA</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <br><button class="btn btn-default btn-lg">Contáctanos</button>
-    </div>
-    <div class="col-sm-4">
-      <img src="/img/proyectos.jpg" style="width: 60%; position: relative;">
-      <span class="glyphicon glyphicon-signal logo"></span>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
-    </div>
-    <div class="col-sm-8">
-      <h2>Nuestros valores</h2><br>
-      <h4><strong>MISIÓN</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas doloribus ad odio, provident dolor blanditiis ratione nulla animi, quibusdam maiores recusandae quasi aliquam non nemo aspernatur nobis, explicabo beatae molestias.</h4><br>
-      <p><strong>VISIÓN:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fugiat accusantium excepturi at ipsum nulla, perspiciatis aut eveniet, blanditiis nihil laudantium quisquam cum asperiores quo labore alias debitis quis vitae.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Container (Sección Experiencia) -->
-<div id="servicios" class="container-fluid text-center">
-  <h2>SERVICIOS</h2>
-  <h4>Lo que ofrecemos</h4>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>EXPERIENCIA</h4>
-      <p>Contamos con personal caliﬁcado para manejar un diseño completo. Del concepto de la solución a la ingeniería del detalle, instalación y monitoreo en línea.</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4>GARANTÍA</h4>
-      <p>Ofrecemos alta calidad en nuestras instalaciones y acabados, además una garantía de generación de energía eléctrica de los paneles solares de 25 años y en inversores de corriente hasta 20 años.</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>DISPONIBILIDAD</h4>
-      <p>Garantizamos un suministro conﬁable de los equipos y sus componentes, gracias a las alianzas comerciales con fabricantes de reconocida calidad y prestigio.</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div id="experiencia" class="container-fluid text-center bg-grey">
-  <h2>EXPERIENCIA</h2><br>
-  <h4>Algunos proyectos instalados</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="/img/1.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Proyecto 1</strong></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="/img/2.jpg" alt="New York" width="400" height="300">
-        <p><strong>Proyecto 2</strong></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="/img/3.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>Proyecto 3</strong></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-      </div>
-    </div>
-  </div><br>
-
-  <!-- Inicia Carrusel -->
-<div id="myCarousel" style="margin-top: 0px;" class="carousel slide" data-ride="carousel">
+<!-- Inicia Carrusel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -448,8 +307,94 @@
 </div>
 <!-- Termina Carrusel -->
 
-  <br/>
-  <h2>Testimonios de nuestros clientes</h2>
+
+
+
+<!-- Container (Sección Inicio) -->
+<div id="inicio" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Sobre nosotros</h2><br>
+      <h4>MÁS DE 25 AÑOS DE EXPERIENCIA</h4><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br><button class="btn btn-default btn-lg">Contáctanos</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Nuestros valores</h2><br>
+      <h4><strong>MISIÓN</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas doloribus ad odio, provident dolor blanditiis ratione nulla animi, quibusdam maiores recusandae quasi aliquam non nemo aspernatur nobis, explicabo beatae molestias.</h4><br>
+      <p><strong>VISIÓN:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fugiat accusantium excepturi at ipsum nulla, perspiciatis aut eveniet, blanditiis nihil laudantium quisquam cum asperiores quo labore alias debitis quis vitae.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Sección Experiencia) -->
+<div id="experiencia" class="container-fluid text-center">
+  <h2>EXPERIENCIA</h2>
+  <h4>Lo que ofrecemos</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>EXPERIENCIA</h4>
+      <p>Contamos con personal caliﬁcado para manejar un diseño completo. Del concepto de la solución a la ingeniería del detalle, instalación y monitoreo en línea.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4>GARANTÍA</h4>
+      <p>Ofrecemos alta calidad en nuestras instalaciones y acabados, además una garantía de generación de energía eléctrica de los paneles solares de 25 años y en inversores de corriente hasta 20 años.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>DISPONIBILIDAD</h4>
+      <p>Garantizamos un suministro conﬁable de los equipos y sus componentes, gracias a las alianzas comerciales con fabricantes de reconocida calidad y prestigio.</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="experiencia" class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br>
+  <h4>What we have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="/img/1.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="/img/2.jpg" alt="New York" width="400" height="300">
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="/img/3.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>What our customers say</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -461,7 +406,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"Esta compañía es la mejor, ¡estoy muy contento con el resultado!"<br><span>Juan Perez, residente de Arbolillo 49</span></h4>
+        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
       </div>
       <div class="item">
         <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
@@ -483,10 +428,7 @@
   </div>
 </div>
 
-
-
-
-<!-- Container (Pricing Section) 
+<!-- Container (Pricing Section) -->
 <div id="pricing" class="container-fluid">
   <div class="text-center">
     <h2>Pricing</h2>
@@ -555,28 +497,27 @@
 
 <!-- Container (Contact Section) -->
 <div id="contacto" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACTO</h2>
-
+  <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
-      <p>Contáctanos y nosotros te devolvemos la llamada en menos de 24 horas</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Costa Rica</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +506 8800-7000</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> contacto@conermax.com</p>
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="nombre" name="nombre" placeholder="Nombre" type="text" required>
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
         </div>
         <div class="col-sm-6 form-group">
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
       </div>
-      <textarea class="form-control" id="commentarios" name="commentarios" placeholder="Comentarios" rows="5"></textarea><br>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Enviar</button>
+          <button class="btn btn-default pull-right" type="submit">Send</button>
         </div>
       </div>
     </div>
@@ -604,7 +545,7 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
   <a href="#Conermax" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Copyright <a href="https://www.conermex.com.mx" title="Visit w3schools">Conermex</a></p>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
 </footer>
 
 <script>
