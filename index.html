@@ -33,14 +33,72 @@
       font-weight: 400;
       margin-bottom: 30px;
   }  
+
+  .jumbo {
+
+    width: 100%;
+    display: block;
+    height: auto;
+    float: left;
+    margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
   
   .jumbotron {
-      background: url("img/2.jpg") fixed;      
+      background: url("img/conermax-hero1000.jpg") center no-repeat;  
+      width: 50%;
+      height: 50%; 
+      height: 860px;   
       color: #fff;
-      margin-bottom: 0px !important;     
+      margin-bottom: 10% !important;  
+      font-family: Lato, sans-serif;
+      padding-bottom: 0px !important;
+      float: left;
+  }
+
+  .jumbotron h3{
+      color: white;
+      font-size: 25px;
+      line-height: 1.375em;
+      font-weight: 400;
+      margin-top: 10%;
+      margin-bottom: 5%;
+  }
+
+  .jumbotron2 {
+      
+      background: url("img/jumbotron2-a.jpg") fixed left 50%;   
+      width: 50%; 
+      height: 860px;   
+      color: #fff;
+      margin-bottom: 10% !important; 
       font-family: Lato, sans-serif;
       padding-bottom: 0px;
+      float: left;
   }
+
+
+  .jumbotron2 h1 {
+      font-family: Barlow, sans-serif;
+      color: white;
+      font-size: 35px;
+      line-height: 1.375em;
+      font-weight: 400;
+      text-align: center;
+  }
+
+  .jumbotron2-dentro {
+    width: 100%;
+    position: absolute;
+    margin: auto;
+  }
+
+
+
+
+
   .container-fluid {
       padding: 5% 10%;
   }
@@ -254,7 +312,7 @@
       <a class="navbar-brand" href="#Conermax"><img src="img/icono-logo-blanco-01.png" alt="" style="width: 10%;">
       </a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
+    <div class="collapse navbar-collapse" id="myNavbar"> 
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#nosotros">NOSOTROS</a></li>
         <li><a href="#servicios">SERVICIOS</a></li>
@@ -265,20 +323,41 @@
   </div>
 </nav>
 
+
+<div class="jumbo">
+
 <div class="jumbotron text-center ">
-  <div style="background: rgba(3, 70, 165, 0.6); width: 100%;">
-  <br/>
-  <br/>
-  <br/>
-  <br/>
-  <div class="logosvg">
-    <img src="img/logo-blanco-01.svg" alt="" width="25%">
-  </div>
-  <br/>
-  <h3>La empresa solar con más de 25 años de experiencia</h3>
-  <br/>
-  <br/>
+  <div style="background: rgba(3, 70, 165, 0.0); width: 100%;">
   
+  <div class="logosvg">
+    <!-- INICIA LOGO
+     <img src="img/logo-blanco-01.svg" alt="" width="25%"> 
+TERMINA LOGO -->
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- INICIA H3
+  
+  <h3>La empresa solar con más de 25 años de experiencia</h3>
+
+  TERMINA H3-->
+  
+  <!-- INICIA EMAIL
   
   <form class="form-inline">
     <div class="input-group">
@@ -289,6 +368,12 @@
     </div>
   </form>
 
+
+  TERMINA MAIL -->
+
+
+  <!-- INICIA WHATSAPP
+
 <br/>
   <button style="background-color: green; margin-bottom: 0px;" class="btn">
   <i class="fa"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDkwIDkwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5MCA5MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGlkPSJXaGF0c0FwcCIgZD0iTTkwLDQzLjg0MWMwLDI0LjIxMy0xOS43NzksNDMuODQxLTQ0LjE4Miw0My44NDFjLTcuNzQ3LDAtMTUuMDI1LTEuOTgtMjEuMzU3LTUuNDU1TDAsOTBsNy45NzUtMjMuNTIyICAgYy00LjAyMy02LjYwNi02LjM0LTE0LjM1NC02LjM0LTIyLjYzN0MxLjYzNSwxOS42MjgsMjEuNDE2LDAsNDUuODE4LDBDNzAuMjIzLDAsOTAsMTkuNjI4LDkwLDQzLjg0MXogTTQ1LjgxOCw2Ljk4MiAgIGMtMjAuNDg0LDAtMzcuMTQ2LDE2LjUzNS0zNy4xNDYsMzYuODU5YzAsOC4wNjUsMi42MjksMTUuNTM0LDcuMDc2LDIxLjYxTDExLjEwNyw3OS4xNGwxNC4yNzUtNC41MzcgICBjNS44NjUsMy44NTEsMTIuODkxLDYuMDk3LDIwLjQzNyw2LjA5N2MyMC40ODEsMCwzNy4xNDYtMTYuNTMzLDM3LjE0Ni0zNi44NTdTNjYuMzAxLDYuOTgyLDQ1LjgxOCw2Ljk4MnogTTY4LjEyOSw1My45MzggICBjLTAuMjczLTAuNDQ3LTAuOTk0LTAuNzE3LTIuMDc2LTEuMjU0Yy0xLjA4NC0wLjUzNy02LjQxLTMuMTM4LTcuNC0zLjQ5NWMtMC45OTMtMC4zNTgtMS43MTctMC41MzgtMi40MzgsMC41MzcgICBjLTAuNzIxLDEuMDc2LTIuNzk3LDMuNDk1LTMuNDMsNC4yMTJjLTAuNjMyLDAuNzE5LTEuMjYzLDAuODA5LTIuMzQ3LDAuMjcxYy0xLjA4Mi0wLjUzNy00LjU3MS0xLjY3My04LjcwOC01LjMzMyAgIGMtMy4yMTktMi44NDgtNS4zOTMtNi4zNjQtNi4wMjUtNy40NDFjLTAuNjMxLTEuMDc1LTAuMDY2LTEuNjU2LDAuNDc1LTIuMTkxYzAuNDg4LTAuNDgyLDEuMDg0LTEuMjU1LDEuNjI1LTEuODgyICAgYzAuNTQzLTAuNjI4LDAuNzIzLTEuMDc1LDEuMDgyLTEuNzkzYzAuMzYzLTAuNzE3LDAuMTgyLTEuMzQ0LTAuMDktMS44ODNjLTAuMjctMC41MzctMi40MzgtNS44MjUtMy4zNC03Ljk3NyAgIGMtMC45MDItMi4xNS0xLjgwMy0xLjc5Mi0yLjQzNi0xLjc5MmMtMC42MzEsMC0xLjM1NC0wLjA5LTIuMDc2LTAuMDljLTAuNzIyLDAtMS44OTYsMC4yNjktMi44ODksMS4zNDQgICBjLTAuOTkyLDEuMDc2LTMuNzg5LDMuNjc2LTMuNzg5LDguOTYzYzAsNS4yODgsMy44NzksMTAuMzk3LDQuNDIyLDExLjExM2MwLjU0MSwwLjcxNiw3LjQ5LDExLjkyLDE4LjUsMTYuMjIzICAgQzU4LjIsNjUuNzcxLDU4LjIsNjQuMzM2LDYwLjE4Niw2NC4xNTZjMS45ODQtMC4xNzksNi40MDYtMi41OTksNy4zMTItNS4xMDdDNjguMzk4LDU2LjUzNyw2OC4zOTgsNTQuMzg2LDY4LjEyOSw1My45Mzh6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" /></i><a href="https://api.whatsapp.com/send?phone=50688007000&text=Contacto%20desde%20sitio%20web" target="_new" style="color: white; text-decoration: underline; font-size: 15px;"> Whatsapp +506 8800-7000 </a>
@@ -297,6 +382,9 @@
                         
     <a href="https://api.whatsapp.com/send?phone=50688007000&text=Contacto%20desde%20sitio%20web" target="_new" style="color: white;"></a> 
   </button>
+
+TERMINA WHATSAPP -->
+
   <br/>
   <br/>
   <br/>
@@ -306,7 +394,44 @@
 
 
 
+
+
+
 </div>
+<div class="jumbotron2 text-center"> 
+  <div style="display: block; float: left; background: rgba(3, 70, 165, 0.5); width: 100%; position: relative; height: 860px;">
+  
+  </div>
+
+  <div style="width: 50%; position: absolute; height: 860px; display: block; float: left; margin: auto;">
+
+    <h1 class="slideanim" style="background: rgba(95, 157, 249, 0.5);width: 70%; margin-top: 40% !important; margin: auto; padding: 1%; " >La empresa solar con más de 25 años de experiencia</h1>
+
+    
+    <h3 class="slideanim">Giro empresarial</h3>
+    <h3 class="slideanim">Escala comercial</h3>
+
+
+  <form class="form-inline">
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Envíanos tu mail" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Suscríbete</button>
+      </div>
+    </div>
+  </form>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 <!-- Inicia sticky whatsapp -->
 
@@ -323,6 +448,9 @@
 </div>
 
 
+</div>
+
+
 
 
  <!--Termina sticky -->
@@ -332,7 +460,7 @@
    <br/>
    </div>
  
- <!--Termina imagen parallax-->
+ Termina imagen parallax-->
 
 
 
@@ -344,7 +472,7 @@
 
 <!-- Container (Sección Inicio) -->
 <div id="nosotros" class="container-fluid">
-  <div class="row">
+  <div class="row slideanim">
     <div class="col-sm-7" >
       <h2>Sobre nosotros</h2><br>
       <h4>MÁS DE 25 AÑOS DE EXPERIENCIA</h4><br>
@@ -359,8 +487,9 @@
   </div>
 </div>
 
+
 <div class="container-fluid bg-grey">
-  <div class="row">
+  <div class="row ">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-ok logo slideanim"></span>
     </div>
@@ -592,7 +721,7 @@
     </div>    
   </div>
 </div>
-<!-- Container (Contact Section) -->
+<! Container (Contact Section) -->
 <div id="contacto" class="container-fluid">
   <h2 class="text-center">CONTACTO</h2>
 
@@ -673,5 +802,3 @@ $(document).ready(function(){
 
 </body>
 </html>
-
-About
