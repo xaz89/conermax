@@ -33,7 +33,10 @@
       color: #303030;
       font-weight: 400;
       margin-bottom: 30px;
-  }  
+  } 
+
+  
+
 
   .jumbo {
 
@@ -67,15 +70,19 @@
       margin-bottom: 5%;
   }
 
+  #nosotros {
+    float: left;
+  }
+
   .jumbotron2 {
       
       background: url("./img/jumbotron2-a.jpg") center fixed repeat-x;   
       width: 100%; 
-      height: 1360px;   
+      height: 1160px;   
       color: #fff;
-      margin-bottom: 10% !important; 
+      margin-bottom: 0 !important; 
       font-family: Lato, sans-serif;
-      padding-bottom: 0px;
+      padding-bottom: 0px ;
       float: left;
   }
 
@@ -95,10 +102,19 @@
     margin: auto;
   }
 
+  .jumbotrondentro {
+      display: block;
+      float: left;
+      background: rgba(3, 70, 165, 0.1);
+      width: 100%;
+      position: relative;
+      height: 1160px;
+    }
+
   .laempresasolar {
     width: 100%;
     position: absolute;
-    height: 1360px;
+    height: 1160px;
     display: block;
     float: left;
     margin: auto;"
@@ -132,7 +148,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 
       width: 70%;
       margin-top: 5% !important;
-      margin-bottom: 10% !important;
+      margin-bottom: 7% !important;
       margin: auto;
       padding: 1%; 
     }
@@ -349,22 +365,50 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
     .jumbotron2{
       
       width: 100%;
+      height: 660px;
+
+    }
+
+
+    .jumbotrondentro {
+      display: block;
+      float: left;
+      background: rgba(3, 70, 165, 0.1);
+      width: 100%;
+      position: relative;
+      height: 660px;
     }
     .laempresasolar {
     width: 100%;
     position: absolute;
-    height: 860px;
+    height: 660px;
     display: block;
     float: left;
     margin: auto;
   }
-    .laempresasolar h1{
-      background: rgba(95, 157, 249, 0.5);
-      width: 70%;
-      margin-top: 50% !important;
-      margin: auto;
-      padding: 1%; 
+    
+
+
+.laempresasolar h1{
+      font-size: larger;
     }
+
+    .laempresasolar h3{
+     
+      font-size: medium;
+      font-weight: normal;
+    }
+
+    .laempresasolar img{
+      float: none;
+      margin: 40% 0 0 !important;
+      width: 60%;
+      
+    }
+
+
+
+
   }
   @media screen and (max-width: 480px) {
     .logo {
@@ -403,7 +447,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 
 
 <div class="jumbotron2 text-center"> 
-  <div style="display: block; float: left; background: rgba(3, 70, 165, 0.1); width: 100%; position: relative; height: 1360px;">
+  <div class="jumbotrondentro">
    
   
   
@@ -413,19 +457,28 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 
     <h1 class="slideanim"><i class="glyphicon glyphicon-menu-left"></i>La empresa solar con más de 25 años de experiencia<i class="glyphicon glyphicon-menu-right"></i></h1>
 
-    
     <h3 class="slideanim">Giro empresarial | Escala comercial</h3>
+    <br/>
+
+
+
+
+    
+    <h4 class="slideanim" style="color: white; font-size: medium;">¿Desea referir un cliente? Déjenos sus datos y le contactamos enseguida</h4>
     
 
 
   <form class="form-inline">
-    <div class="input-group">
+    <div class="input-group slideanim">
       <input type="email" class="form-control" size="50" placeholder="Envíanos tu mail" required>
       <div class="input-group-btn">
         <button type="button" class="btn btn-danger">Suscríbete</button>
       </div>
     </div>
   </form>
+
+
+
 
   </div>
 </div>
@@ -480,14 +533,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 <div id="nosotros" class="container-fluid">
   <div class="row slideanim">
     <div class="col-sm-7" >
-      <h2>Sobre nosotros</h2><br>
-      <h4>MÁS DE 25 AÑOS DE EXPERIENCIA</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-      <br><button class="btn btn-default btn-lg">Contáctanos</button>
+      <h2><span class="glyphicon glyphicon-piggy-bank logo-small"></span>AHORRA HASTA 90%</h2>
+      <br>
+      <h4>MÁS DE 25 AÑOS DE EXPERIENCIA</h4>
+      
+      <p>Si consumes más de ¢125,000 puedes ahorrar hasta un 90% de energía y calificas para el estudio gratuito de tarifa y financiamiento. Con tu sistema ahorras desde su instalación y cada año incrementa tu ahorro conforme el precio de la electricidad suba. 
+      </p>
+      <br><button class="btn btn-default btn-lg">¿Cómo funciona?</button>
     </div>
     <div class="col-sm-5">
       <span class="glyphicon logo slideanim">
-        <img src="img/proyectos.jpg" style="width: 100%; position: relative; margin-left: auto; margin-right: auto;">
+        <img src="img/suempresaahorra.png" style="width: 100%; position: relative; margin-left: auto; margin-right: auto;">
       </span>
     </div>
   </div>
@@ -495,12 +551,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', end
 
 
 <div class="container-fluid bg-grey">
-  <div class="row ">
+  <div class="row slideanim">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-ok logo slideanim"></span>
+      
     </div>
     <div class="col-sm-8">
-      <h2>Nuestros valores</h2><br>
+      <h2><a class="glyphicon glyphicon-ok logo-small"></a>    PLAN DE REFERIDOS</h2><br>
       <h4><strong>MISIÓN</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas doloribus ad odio, provident dolor blanditiis ratione nulla animi, quibusdam maiores recusandae quasi aliquam non nemo aspernatur nobis, explicabo beatae molestias.</h4><br>
       <p><strong>VISIÓN:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fugiat accusantium excepturi at ipsum nulla, perspiciatis aut eveniet, blanditiis nihil laudantium quisquam cum asperiores quo labore alias debitis quis vitae.</p>
     </div>
